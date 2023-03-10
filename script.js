@@ -1,22 +1,3 @@
-// function validate(){
-//     var name = document.getElementById("fname").value;
-//     var mail = document.getElementById("mail").value;
-//     var phonenu = document.getElementById("phone").value;
-//     var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
-
-//     if(!regName.test(name)){
-//         alert('Invalid name given.');
-//         return false;
-//     }else{
-//         alert('Valid name given.');
-//         return false;
-//     }
-   
-//      return true;
-// }
-
-
-
 function store(){
     let Name=document.getElementById("fname").value;
     let Email=document.getElementById("mail").value;
