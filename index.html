@@ -10,7 +10,7 @@
   <body style="background-color: rgb(85, 85, 219); ">
     <center> 
     <form>
-         <table>
+         <table class="t_one">
             <tr> 
                 <td>Name :</td>
                 <td class="tdd"><input type="text" placeholder="Name" class="name" id="fname"></td>
@@ -21,11 +21,11 @@
             </tr>
             <tr>
                 <td>Phone number :</td>
-                <td class="tdd"><input type="number" placeholder="Enter Number" class="name" id="phone"></td>
+                <td class="tdd"><input type="tel" placeholder="Enter Number" maxlength="10" class="name" id="phone"></td>
             </tr>
             <tr>
                 <td>Birthdate :</td>
-                <td class="tdd"><input type="date"  class="name" id="dob"></td>
+                <td class="tdd"><input type="date"  class="name" id="dob" required></td>
             </tr>
             <tr>
                 <td>Appointment time :</td>
@@ -45,7 +45,7 @@
                 </td>
             </tr>
             <tr>
-                <td >Payment method:</td>
+                <td>Payment method:</td>
                 <td class="tdd"><input type="radio" name="Payment" class="name" id="ptype"> Cash
                 <input type="radio" name="Payment" class="name" id="ptype"> UPI
                 <input type="radio" name="Payment" class="name" id="ptype"> Card
@@ -53,24 +53,38 @@
             </tr>
             <tr>
                 <td>Age :</td>
-                <td class="tdd"><input type="range" class="name" id="age"></td>
+                <td class="tdd"><input type="range" class="name" style="color: rgb(85, 85, 219);" id="age"></td>
             </tr>
             <tr>
                 <td> Upload photo:</td>
                 <td class="p-2"><input type="file" class="name" id="photo"></td>
             </tr>
             <tr>
-                <td><small>this detail is right</small></td>
-                <td class="tdd"><input type="checkbox" class="name" required></td>
+                <td><small><small>certify that all the above information is correct</small></small></td>
+                <td class="tdd"><input type="checkbox" onclick="validate()" class="name"></td>
             </tr>
             <tr>
                 <td></td>
-                <td><button class="subbtn" onclick="store(),validate()">submit</button></td>
+                <td><button class="subbtn" onclick="store()">submit</button></td>
             </tr>
         </table> 
     
     </form>
    </center>
+   <hr>
+    <form class="p-5">
+    <table class="t_two">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Number</th>
+        <th>DOB</th>
+        <th>Time</th>
+        <th>Color</th>
+        <th>Payment</th>
+        <th>Age</th>
+        <th>Photo</th>
+    </table>
+   </form>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
