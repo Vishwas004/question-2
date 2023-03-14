@@ -3,11 +3,17 @@
     margin: 0;
    
 }
+body{
+    background-image: url('https://i.redd.it/0bb6dqsiab451.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 form{
     padding-top: 3%;
 }
 .t_one{
-    background-color: azure;
+    
+    color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 40px 5px red;
     }
@@ -17,9 +23,10 @@ td{
 .tdd{
     padding: 2%;
 }
+
 .tdd input{
     background-color: rgba(255, 255, 255, 0);
-    border-bottom: 1px solid rgb(85, 85, 219);
+    border-bottom: 1px solid rgb(153, 10, 139);
     border-top: none;
     border-left: none;
     border-right: none;
@@ -36,8 +43,3 @@ td{
     color: white;
     border: none;
 }
-.t_two th{
-    background-color: aquamarine;
-    border: solid 2px black;
-    padding: 10px;
-}  

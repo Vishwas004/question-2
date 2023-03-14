@@ -13,15 +13,15 @@
          <table class="t_one">
             <tr> 
                 <td>Name :</td>
-                <td class="tdd"><input type="text" placeholder="Name" class="name" id="fname"></td>
+                <td class="tdd"><input type="text" autocomplete="off" style="background-color: transparent;" placeholder="Name" class="name" id="fname"></td>
             </tr>
             <tr>
                 <td>  Email :</td>
-                <td class="tdd"><input type="email" placeholder="Enter Mail Id" class="name" id="mail"></td>
+                <td class="tdd"><input type="email" autocomplete="off" placeholder="Enter Mail Id" class="name" id="mail"></td>
             </tr>
             <tr>
                 <td>Phone number :</td>
-                <td class="tdd"><input type="tel" placeholder="Enter Number" maxlength="10" class="name" id="phone"></td>
+                <td class="tdd"><input type="tel" autocomplete="off" placeholder="Enter Number" maxlength="10" class="name" id="phone"></td>
             </tr>
             <tr>
                 <td>Birthdate :</td>
@@ -53,14 +53,14 @@
             </tr>
             <tr>
                 <td>Age :</td>
-                <td class="tdd"><input type="range" class="name" style="color: rgb(85, 85, 219);" id="age"></td>
+                <td class="tdd"><input type="range" class="name" value="10" id="age"></td>
             </tr>
             <tr>
                 <td> Upload photo:</td>
                 <td class="p-2"><input type="file" class="name" id="photo"></td>
             </tr>
             <tr>
-                <td><small><small>certify that all the above information is correct</small></small></td>
+                <td><label style="color: red;">*</label><small><small>certify that all the above information is correct</small></small></td>
                 <td class="tdd"><input type="checkbox" onclick="validate()" class="name"></td>
             </tr>
             <tr>
@@ -91,3 +91,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
